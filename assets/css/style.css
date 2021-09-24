@@ -5,9 +5,33 @@
     box-sizing: border-box;
 }
 
+/* all page variables */
+:root {
+    --primary-color: #f2f2f2;
+    --secondary-color:#b3b3cc;
+    --tertiary-color:#32324e;
+}
+/* body */
+body {
+    color: var(--tertiary-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 /* header */
 header {
     background-image: url(../images/hero.jpeg);
+    display: flex;
+    justify-content: space-between;
+}
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--tertiary-color);
+}
+header a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--tertiary-color);
 }
 
 /* hero */
