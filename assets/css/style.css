@@ -11,13 +11,14 @@
     --secondary-color:#b3b3cc;
     --tertiary-color:#32324e;
 }
+
 /* body and section defaults */
 body {
     color: var(--tertiary-color);
     font-family: Arial, Helvetica, sans-serif;
 }
 section {
-    padding: 60px;
+    padding: 40px;
 }
 .section-title {
     font-size: 36px;
@@ -80,24 +81,15 @@ header nav ul li a {
 .flex-row {
     display: flex;
     flex-wrap: wrap;
+    justify-content: start;
 }
+
 
 /* work section */
 .project {
     background-color: var(--secondary-color);
     color: var(--primary-color);
-    display: flex;
 }
 .project img {
     width: 100%;
 }
-#project-one {
-    background-image: url(../images/beach-photo1.jpg);
-    background-size: cover;
-}
-#project-two {
-    background;
-}
-#project-three
-#project-four
-#project-five
