@@ -1,0 +1,16 @@
+/* remove default margin and borders */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+header {
+    background-image: url(../images/hero.jpeg);
+}
+
+/* hero */
+.hero {
+    background-image: url(../images/hero.jpeg);
+}
