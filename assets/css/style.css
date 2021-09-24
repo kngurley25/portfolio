@@ -11,17 +11,30 @@
     --secondary-color:#b3b3cc;
     --tertiary-color:#32324e;
 }
-/* body */
+/* body and section defaults */
 body {
     color: var(--tertiary-color);
     font-family: Arial, Helvetica, sans-serif;
 }
+section {
+    padding: 60px;
+}
+.section-title {
+    font-size: 36px;
+}
 
 /* header */
 header {
-    background-image: url(../images/hero.jpeg);
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 25px;
+    /* note: correlates with hero */
 }
 header h1 {
     font-weight: bold;
@@ -33,8 +46,58 @@ header a {
     font-weight: bold;
     color: var(--tertiary-color);
 }
+header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li a {
+    padding: 25px;
+    /* note: correlates with hero h3 */
+    font-weight: lighter;
+}
 
 /* hero */
 .hero {
-    background-image: url(../images/hero.jpeg);
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 25px; 
+    /* note: correlates with header */
 }
+.hero h3 {
+    padding: 0 25px 0 25px;
+    /* note: correlates with navigation links */
+}
+
+/* about me & work sections */
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* work section */
+.project {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    display: flex;
+}
+.project img {
+    width: 100%;
+}
+#project-one {
+    background-image: url(../images/beach-photo1.jpg);
+    background-size: cover;
+}
+#project-two {
+    background;
+}
+#project-three
+#project-four
+#project-five
