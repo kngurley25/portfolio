@@ -72,8 +72,9 @@ header nav ul li a {
     /* note: correlates with header */
 }
 .hero h3 {
-    padding: 50px 25px 0 25px;
+    padding: 25px; 
     /* note: correlates with navigation links */
+    background-color: var(--secondary-color);
 }
 
 /* grid: about me/ work/ contact */
@@ -87,12 +88,36 @@ header nav ul li a {
 
 
 /* work section */
-.project {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-}
-.project img {
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
     width: 100%;
+}
+.project {
+    flex: 1;    
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+    margin: 20px;
+    padding: 5px;
+    border-width: 5px;
+    border-style: solid;
+}
+.project-img {
+    width: 100%;
+    border-style: solid;
+    border: 5px;
+}
+.project-text {
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+    margin: 5px;
+    border-style: solid;
+}
+.project-one {
+    background-image: url(../images/beach-photo1.jpg);
+    background-size: 100%;
 }
 
 /* contact me section */
