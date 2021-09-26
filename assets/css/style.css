@@ -18,12 +18,19 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--primary-color);
 }
+/* grid: about me/ work/ contact */
+.grid {
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-gap: 50px;
+}
 section {
     padding: 50px;
     display: flex;
 }
 .section-title {
     font-size: 36px;
+    text-align: right;
 }
 
 /* header */
@@ -57,6 +64,7 @@ header nav ul li a {
     padding: 25px;
     /* note: correlates with hero h3 */
     font-weight: lighter;
+    font-size: 1.75vw;
 }
 
 /* hero */
@@ -77,28 +85,23 @@ header nav ul li a {
     background-color: var(--secondary-color);
 }
 
-/* grid: about me/ work/ contact */
-.grid {
-    display: grid;
-    grid-template-columns: 200px auto;
-    grid-gap: 50px;
-}
-
 /* about me section */
-
+#about-me p {
+    line-height: 1.5;
+}
 
 /* work section */
 .projects {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin: 0 auto;
     width: 100%;
 }
 .project {    
     background-color: var(--secondary-color);
     color: var(--tertiary-color);
-    margin: 10px;
+    margin: 20px 20px 10px 0;
     padding: 5px;
     border-width: 5px;
     border-style: solid;
@@ -149,11 +152,11 @@ header nav ul li a {
 }
 .contact-me ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     flex-wrap: wrap;
     align-items: center;
     list-style: none;
 }
 .contact-me ul li {
-    padding: 50px;
+    padding: 0 80px 0 00px;
 }
