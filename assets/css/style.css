@@ -91,18 +91,19 @@ header nav ul li a {
 .projects {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 0 auto;
     width: 100%;
 }
-.project {
-    flex: 1;    
+.project {    
     background-color: var(--secondary-color);
     color: var(--tertiary-color);
-    margin: 20px;
+    margin: 10px;
     padding: 5px;
     border-width: 5px;
     border-style: solid;
+    width: 350px;
+    height: 200px;
 }
 .project-img {
     width: 100%;
@@ -117,10 +118,35 @@ header nav ul li a {
 }
 .project-one {
     background-image: url(../images/beach-photo1.jpg);
-    background-size: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.project-two {
+    background-image: url(../images/arrowhead-photo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.project-three {
+    background-image: url(../images/newyork-photo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.project-four {
+    background-image: url(../images/flower.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.project-five {
+    background-image: url(../images/beach-photo2.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 /* contact me section */
+#contact {
+    display: flex;
+    align-items: center;
+}
 .contact-me ul {
     display: flex;
     justify-content: space-evenly;
