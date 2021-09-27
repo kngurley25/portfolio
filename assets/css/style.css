@@ -84,7 +84,7 @@ header nav ul li a:hover {
     background-position: center;
     background-attachment: fixed;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     padding: 60px 25px; 
     /* note: correlates with header */
@@ -100,6 +100,11 @@ header nav ul li a:hover {
 }
 
 /* about me section */
+#about-me div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 #about-me p {
     line-height: 1.5;
 }
@@ -124,6 +129,9 @@ header nav ul li a:hover {
     flex: 1;
     aspect-ratio: 4/3;
     border-radius: 5px;
+}
+.project a {
+    text-decoration: none;
 }
 .project:hover {
     opacity: 0.5;  
@@ -162,7 +170,7 @@ header nav ul li a:hover {
     background-position: center;
 }
 .project-five {
-    background-image: url(../images/beach-photo2.jpg);
+    background-image: url(../images/hero-bg.jpg);
     background-size: cover;
     background-position: center;
 }
