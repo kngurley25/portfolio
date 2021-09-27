@@ -31,6 +31,8 @@ section {
 .section-title {
     font-size: 36px;
     text-align: right;
+    border-right: 3px solid var(--tertiary-color);
+    padding-right: 10px;
 }
 
 /* header */
@@ -47,6 +49,7 @@ header h1 {
     font-weight: bold;
     font-size: 36px;
     color: var(--tertiary-color);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 header a {
     text-decoration: none;
@@ -65,6 +68,13 @@ header nav ul li a {
     /* note: correlates with hero h3 */
     font-weight: lighter;
     font-size: 16px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+header nav ul li a:hover {
+    background: var(--primary-color);
+    color: var(--tertiary-color);
+    border-radius: 8px;
+    text-shadow: none;
 }
 
 /* hero */
@@ -78,11 +88,15 @@ header nav ul li a {
     align-items: center;
     padding: 60px 25px; 
     /* note: correlates with header */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 .hero h3 {
     padding: 25px; 
     /* note: correlates with navigation links */
     background-color: var(--secondary-color);
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 5px;
 }
 
 /* about me section */
@@ -97,17 +111,22 @@ header nav ul li a {
     justify-content: flex-start;
     margin: 0 auto;
     width: 100%;
+    
 }
 .project {    
     background-color: var(--secondary-color);
     color: var(--tertiary-color);
     margin: 20px 20px 10px 0;
     padding: 5px;
-    border-width: 5px;
+    border-width: 3px;
     border-style: solid;
     min-width: 300px;
     flex: 1;
-    aspect-ratio: 4/3;    
+    aspect-ratio: 4/3;
+    border-radius: 5px;
+}
+.project:hover {
+    opacity: 0.5;  
 }
 .project-img {
     width: 100%;
@@ -119,6 +138,8 @@ header nav ul li a {
     color: var(--tertiary-color);
     margin: 5px;
     border-style: solid;
+    line-height: 1.2;
+    border-radius: 3px;
 }
 .project-one {
     background-image: url(../images/beach-photo1.jpg);
@@ -183,6 +204,11 @@ header nav ul li a {
     section {
         padding: 25px 50px 25px 50px;
         display: flex;
+    }
+    .section-title {
+        border-bottom: 3px solid var(--tertiary-color);
+        padding-right: 0;
+        border-right: none;
     }
     header {
         justify-content: center;
