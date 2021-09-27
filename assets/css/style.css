@@ -102,11 +102,15 @@ header nav ul li a:hover {
 /* about me section */
 #about-me div {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 #about-me p {
     line-height: 1.5;
+}
+#about-me img {
+    max-width: 100px;
+    max-height: 150px;
+    margin: 0 25px;
 }
 
 /* work section */
@@ -225,6 +229,12 @@ header nav ul li a:hover {
         flex: 100%;
         text-align: center;
         margin: 10px;
+    }
+    #about-me div {
+        flex-wrap: wrap;
+    }
+    #about-me img {
+        margin: 0 0 25px 0;
     }
     .projects {
         justify-content: center;
