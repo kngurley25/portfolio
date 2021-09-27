@@ -64,7 +64,7 @@ header nav ul li a {
     padding: 25px;
     /* note: correlates with hero h3 */
     font-weight: lighter;
-    font-size: 1.75vw;
+    font-size: 16px;
 }
 
 /* hero */
@@ -160,13 +160,16 @@ header nav ul li a {
 }
 .contact-me ul li {
     padding: 0 80px 0 00px;
-    font-size: 1.5vw;
+    font-size: 16px;
 }
 
 /* media queries */
 @media screen and (max-width: 980px) {
     .project {    
         flex: 0 70%;   
+    }
+    .contact-me ul li {
+        padding: 0 25px 0 25px;
     }
 }
 
@@ -196,11 +199,21 @@ header nav ul li a {
         justify-content: center;
     }
     .contact-me ul li {
-        padding: 0 30px 0 30px;
+        padding: 0 25px 0 25px;
     }
 }
 
 
 @media screen and (max-width: 575px) {
-
+    section {
+        padding: 25px 50px 25px 50px;
+    }
+    header nav ul li {
+        flex: 100%;
+        text-align: center;
+        margin: 5px auto;
+    }
+    .contact-me ul li {
+        margin: 5px auto;
+    }
 }
