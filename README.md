@@ -15,6 +15,3 @@ https://kngurley25.github.io/portfolio/
 
 ## Image
 ![screenshot](portfolio_index.html.png)
-
-## Wireframe
-![wireframe](portfolio_wireframe.png)
