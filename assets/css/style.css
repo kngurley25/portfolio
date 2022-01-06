@@ -166,7 +166,7 @@ header nav ul li a:hover {
     background-position: center;
 }
 .project-three {
-    background-image: url(../images/flower.jpg);
+    background-image: url(../images/hero-bg.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -176,7 +176,7 @@ header nav ul li a:hover {
     background-position: center;
 }
 .project-five {
-    background-image: url(../images/hero-bg.jpg);
+    background-image: url(../images/trippin-worldwide.png);
     background-size: cover;
     background-position: center;
 }
